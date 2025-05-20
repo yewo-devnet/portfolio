@@ -10,204 +10,251 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="styles.css">
   <style>
-   
+    /* Additional inline styles for alignment */
+    .page-wrapper {
+      padding-top: 70px; /* Space for fixed navbar */
+    }
+    
+    .section-container {
+      width: 85%;
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+    
+    @media (max-width: 992px) {
+      .section-container {
+        width: 90%;
+      }
+    }
   </style>
 </head>
 <body>
-  <div class="container-fluid p-0">
-     <!-- Navigation -->
-    <nav class="navbar">
-      <div class="nav-container">
-        <a href="index.html" class="nav-logo">YM</a>
-        <button class="menu-btn" aria-label="Menu">
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="nav-links">
-          <a href="index.html" class="nav-link">Home</a>
-          <a href="about.html" class="nav-link active">About</a>
-          <a href="skills.html" class="nav-link">Skills</a>
-          <a href="projects.html" class="nav-link">Projects</a>
-          <a href="#contact" class="nav-link">Contact</a>
-        </div>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">YM</a>
+      <button class="menu-btn" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </div>
-    </nav>
-    <div class="row g-0">
-      <!-- Left Column (Fixed) -->
-      <div class="col-lg-5 fixed-column">
-        <div class="left-column-bg"></div>
-        <div class="px-4 d-flex flex-column align-items-start">
-          <h1 class="name">Yewo Mkandawire</h1>
-          <h2 class="job-title">Computer Network Engineer</h2>
-          <p class="intro-text">
-            I work with network technologies, building web apps, designing and simulating networks, monitoring and troubleshooting networks.
-          </p>
-          
-          <!-- Profile picture moved to left column -->
-          <div class="profile-pic-container">
-            <img src="pic2.png" alt="Yewo Mkandawire" class="profile-pic">
-          </div>
-          
-          <div class="social-icons">
-            <a href="https://github.com/yewo-devnet"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/yewo-mkandawire-73b4a3285/"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-envelope"></i></a>
-            <a href="#"><i class="fas fa-instagram"></i></a>
+    </div>
+  </nav>
+
+  <div class="page-wrapper">
+    <div class="container-fluid p-0">
+      <div class="row g-0">
+        <!-- Left Column (Fixed) -->
+        <div class="col-lg-5 fixed-column">
+          <div class="left-column-bg"></div>
+          <div class="section-container d-flex flex-column align-items-start">
+            <h1 class="name">Yewo Mkandawire</h1>
+            <h2 class="job-title">Computer Network Engineer</h2>
+            <p class="intro-text">
+              I work with network technologies, building web apps, designing and simulating networks, monitoring and troubleshooting networks.
+            </p>
+            
+            <!-- Profile picture moved to left column -->
+            <div class="profile-pic-container">
+              <img src="pic2.png" alt="Yewo Mkandawire" class="profile-pic">
+            </div>
+            
+            <div class="social-icons">
+              <a href="https://github.com/yewo-devnet"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/yewo-mkandawire-73b4a3285/"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
           </div>
         </div>
-      </div>
-      
-      <!-- Right Column (Scrollable) -->
-      <div class="col-lg-7 scrollable-column">
-        <div class="px-4">
-          <!-- About Me Section -->
-          <section class="section" id="about">
-            <h2 class="section-title">About <a href="#"><i class="fab fa-github"></i></a> </h2>
-            <div>
-              <p>
-                I am a passionate third-year Network Engineering and Web Development student, transitioning into my final year of study.
-              </p>
-              <p>
-                Currently enrolled in CS50x and CS50p, I am honing my skills in programming and computer science. With hands-on experience in various technologies, I am dedicated to building innovative solutions and advancing my expertise in networking and web development.
-              </p>
-              <p>
-                My hands-on experience spans a wide array of technologies and frameworks, working on diverse projects to build innovative solutions. My ambition is to bridge the gap between robust network systems and dynamic web platforms, contributing to transformative advancements in the tech industry.
-              </p>
-            </div>
-          </section>
-          
-          <!-- Projects Section -->
-          <section class="section" id="projects">
-            <h2 class="section-title">Projects</h2>
+        
+        <!-- Right Column (Scrollable) -->
+        <div class="col-lg-7 scrollable-column">
+          <div class="section-container">
+            <!-- About Me Section -->
+            <section class="section" id="about">
+              <h2 class="section-title">About <a href="https://github.com/yewo-devnet"><i class="fab fa-github"></i></a></h2>
+              <div>
+                <p>
+                  I am a passionate third-year Network Engineering and Web Development student, transitioning into my final year of study.
+                </p>
+                <p>
+                  Currently enrolled in CS50x and CS50p, I am honing my skills in programming and computer science. With hands-on experience in various technologies, I am dedicated to building innovative solutions and advancing my expertise in networking and web development.
+                </p>
+                <p>
+                  My hands-on experience spans a wide array of technologies and frameworks, working on diverse projects to build innovative solutions. My ambition is to bridge the gap between robust network systems and dynamic web platforms, contributing to transformative advancements in the tech industry.
+                </p>
+              </div>
+            </section>
             
-            <div class="project-card">
-              <div class="row g-4">
-                <div class="col-md-3">
-                  <img src="https://picsum.photos/200" class="project-image img-fluid" alt="Nthambi Project">
-                </div>
-                <div class="col-md-9">
-                  <div class="project-title-wrapper">
-                    <h3 class="project-title">Nthambi</h3>
-                    <a href="#" class="github-link" aria-label="GitHub repository"><i class="fab fa-github"></i></a>
+            <!-- Projects Section -->
+            <section class="section" id="projects">
+              <h2 class="section-title">Projects</h2>
+              
+              <div class="project-card">
+                <div class="row g-4">
+                  <div class="col-md-3">
+                    <img src="https://picsum.photos/200" class="project-image img-fluid" alt="Nthambi Project">
                   </div>
-                  <p class="project-description">A comprehensive web application that provides innovative solutions for network monitoring and management, designed with user experience in mind.</p>
-                  
-                  <div class="tech-stack mb-2">
-                    <span class="tech-badge">React</span>
-                    <span class="tech-badge">Node.js</span>
-                    <span class="tech-badge">MongoDB</span>
-                    <span class="tech-badge">Express</span>
-                    <span class="tech-badge">Bootstrap</span>
+                  <div class="col-md-9">
+                    <div class="project-title-wrapper d-flex justify-content-between align-items-center">
+                      <h3 class="project-title">Nthambi</h3>
+                      <a href="https://github.com/yewo-devnet" class="github-link" aria-label="GitHub repository"><i class="fab fa-github"></i></a>
+                    </div>
+                    <p class="project-description">A comprehensive web application that provides innovative solutions for network monitoring and management, designed with user experience in mind.</p>
+                    
+                    <div class="tech-stack mb-2">
+                      <span class="tech-badge">React</span>
+                      <span class="tech-badge">Node.js</span>
+                      <span class="tech-badge">MongoDB</span>
+                      <span class="tech-badge">Express</span>
+                      <span class="tech-badge">Bootstrap</span>
+                    </div>
+                    
+                    <p class="project-date">Started December 2024</p>
                   </div>
-                  
-                  <p class="project-date">Started December 2024</p>
                 </div>
               </div>
-            </div>
-            
-            <div class="project-card">
-              <div class="row g-4">
-                <div class="col-md-3">
-                  <img src="https://picsum.photos/200" class="project-image img-fluid" alt="Network Monitoring Tool">
-                </div>
-                <div class="col-md-9">
-                  <div class="project-title-wrapper">
-                    <h3 class="project-title">Network Monitoring Tool</h3>
-                    <a href="#" class="github-link" aria-label="GitHub repository"><i class="fab fa-github"></i></a>
+              
+              <div class="project-card">
+                <div class="row g-4">
+                  <div class="col-md-3">
+                    <img src="https://picsum.photos/200" class="project-image img-fluid" alt="Network Monitoring Tool">
                   </div>
-                  <p class="project-description">An advanced tool that offers real-time monitoring of network performance, alerts for potential issues, and comprehensive analytics for network administrators.</p>
-                  
-                  <div class="tech-stack mb-2">
-                    <span class="tech-badge">Python</span>
-                    <span class="tech-badge">Django</span>
-                    <span class="tech-badge">PostgreSQL</span>
-                    <span class="tech-badge">SNMP</span>
-                    <span class="tech-badge">Chart.js</span>
+                  <div class="col-md-9">
+                    <div class="project-title-wrapper d-flex justify-content-between align-items-center">
+                      <h3 class="project-title">Network Monitoring Tool</h3>
+                      <a href="https://github.com/yewo-devnet" class="github-link" aria-label="GitHub repository"><i class="fab fa-github"></i></a>
+                    </div>
+                    <p class="project-description">An advanced tool that offers real-time monitoring of network performance, alerts for potential issues, and comprehensive analytics for network administrators.</p>
+                    
+                    <div class="tech-stack mb-2">
+                      <span class="tech-badge">Python</span>
+                      <span class="tech-badge">Django</span>
+                      <span class="tech-badge">PostgreSQL</span>
+                      <span class="tech-badge">SNMP</span>
+                      <span class="tech-badge">Chart.js</span>
+                    </div>
+                    
+                    <p class="project-date">Ongoing project</p>
                   </div>
-                  
-                  <p class="project-date">Ongoing project</p>
                 </div>
               </div>
-            </div>
-            
-            <div class="project-card">
-              <div class="row g-4">
-                <div class="col-md-3">
-                  <img src="https://picsum.photos/200" class="project-image img-fluid" alt="University Campus Network">
-                </div>
-                <div class="col-md-9">
-                  <div class="project-title-wrapper">
-                    <h3 class="project-title">University Campus Network</h3>
-                    <a href="#" class="github-link" aria-label="GitHub repository"><i class="fab fa-github"></i></a>
+              
+              <div class="project-card">
+                <div class="row g-4">
+                  <div class="col-md-3">
+                    <img src="https://picsum.photos/200" class="project-image img-fluid" alt="University Campus Network">
                   </div>
-                  <p class="project-description">A scalable and secure network infrastructure designed specifically for university campuses, supporting thousands of concurrent users across multiple buildings.</p>
-                  
-                  <div class="tech-stack mb-2">
-                    <span class="tech-badge">Cisco</span>
-                    <span class="tech-badge">VLAN</span>
-                    <span class="tech-badge">OSPF</span>
-                    <span class="tech-badge">Firewall</span>
-                    <span class="tech-badge">VPN</span>
+                  <div class="col-md-9">
+                    <div class="project-title-wrapper d-flex justify-content-between align-items-center">
+                      <h3 class="project-title">University Campus Network</h3>
+                      <a href="https://github.com/yewo-devnet" class="github-link" aria-label="GitHub repository"><i class="fab fa-github"></i></a>
+                    </div>
+                    <p class="project-description">A scalable and secure network infrastructure designed specifically for university campuses, supporting thousands of concurrent users across multiple buildings.</p>
+                    
+                    <div class="tech-stack mb-2">
+                      <span class="tech-badge">Cisco</span>
+                      <span class="tech-badge">VLAN</span>
+                      <span class="tech-badge">OSPF</span>
+                      <span class="tech-badge">Firewall</span>
+                      <span class="tech-badge">VPN</span>
+                    </div>
+                    
+                    <p class="project-date">Completed project</p>
                   </div>
-                  
-                  <p class="project-date">Completed project</p>
                 </div>
               </div>
-            </div>
-            <a href="" styles=""><h5>View more projects</h3></a>
-          </section>
-          
-          <!-- Skills Section -->
-          <section class="section" id="skills">
-            <h2 class="section-title">Skills</h2>
+              <div class="text-end mt-3">
+                <a href="projects.html" class="view-more">View more projects <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </section>
             
-            <div class="skill-card">
-              <div class="row g-4">
-                <div class="col-md-9">
-                  <h3 class="skill-title">Network Engineering</h3>
-                  <p>Expert in network design, implementation, and troubleshooting with experience in Cisco, Juniper, and other leading networking technologies. Proficient in routing protocols, switching, and network security.</p>
-                </div>
-                <div class="col-md-3">
-                  <img src="https://picsum.photos/200" class="skill-image img-fluid" alt="Network Engineering">
+            <!-- Skills Section -->
+            <section class="section" id="skills">
+              <h2 class="section-title">Skills</h2>
+              
+              <div class="skill-card">
+                <div class="row g-4">
+                  <div class="col-md-9">
+                    <h3 class="skill-title">Network Engineering</h3>
+                    <p>Expert in network design, implementation, and troubleshooting with experience in Cisco, Juniper, and other leading networking technologies. Proficient in routing protocols, switching, and network security.</p>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="https://picsum.photos/200" class="skill-image img-fluid" alt="Network Engineering">
+                  </div>
                 </div>
               </div>
-            </div>
+              
+              <div class="skill-card">
+                <div class="row g-4">
+                  <div class="col-md-9">
+                    <h3 class="skill-title">Web Development</h3>
+                    <p>Skilled in frontend and backend development using modern frameworks and technologies. Experience with HTML, CSS, JavaScript, Bootstrap, and various web development tools.</p>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="https://picsum.photos/200" class="skill-image img-fluid" alt="Web Development">
+                  </div>
+                </div>
+              </div>
+              
+              <div class="skill-card">
+                <div class="row g-4">
+                  <div class="col-md-9">
+                    <h3 class="skill-title">Programming</h3>
+                    <p>Proficient in multiple programming languages including Python, JavaScript, and C. Currently enhancing skills through Harvard's CS50x and CS50p courses.</p>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="https://picsum.photos/200" class="skill-image img-fluid" alt="Programming">
+                  </div>
+                </div>
+              </div>
+              <div class="text-end mt-3">
+                <a href="skills.html" class="view-more">View all skills <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </section>
             
-            <div class="skill-card">
-              <div class="row g-4">
-                <div class="col-md-9">
-                  <h3 class="skill-title">Web Development</h3>
-                  <p>Skilled in frontend and backend development using modern frameworks and technologies. Experience with HTML, CSS, JavaScript, Bootstrap, and various web development tools.</p>
-                </div>
-                <div class="col-md-3">
-                  <img src="https://picsum.photos/200" class="skill-image img-fluid" alt="Web Development">
-                </div>
+            <!-- Contact Section & Footer -->
+            <section class="section text-center" id="contact">
+              <h2 class="section-title">Let's Work Together</h2>
+              <div class="contact-container">
+                <p class="contact-text mb-4">I'm always open to new opportunities and interesting projects. Feel free to reach out if you'd like to collaborate or just have a chat about technology.</p>
+                <a href="mailto:contact@yewomkandawire.com" class="contact-btn">Contact Me</a>
               </div>
-            </div>
-            
-            <div class="skill-card">
-              <div class="row g-4">
-                <div class="col-md-9">
-                  <h3 class="skill-title">Programming</h3>
-                  <p>Proficient in multiple programming languages including Python, JavaScript, and C. Currently enhancing skills through Harvard's CS50x and CS50p courses.</p>
-                </div>
-                <div class="col-md-3">
-                  <img src="https://picsum.photos/200" class="skill-image img-fluid" alt="Programming">
-                </div>
-              </div>
-            </div>
-          </section>
-          
-          <!-- Contact Section & Footer -->
-          <section class="section text-center" id="contact">
-            <h2 class="section-title">Let's Work Together</h2>
-            <a href="#contact" class="contact-btn">Contact Me</a>
-            <p class="footer-text">Crafted with ❤ by Yewo</p>
-          </section>
+              <p class="footer-text mt-5">Crafted with <span class="green-text">❤</span> by Yewo</p>
+            </section>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- Back to top button -->
+  <a href="#" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-RkDQYvKDFR8Vn1vlKujy1HUxs6KGdJMzh/H7M9sO+7CDjS9aPHzIgCxPj+0z7yzV" crossorigin="anonymous"></script>
+  <script>
+    // Display back-to-top button when scrolled down
+    window.addEventListener('scroll', function() {
+      var backToTop = document.querySelector('.back-to-top');
+      if (window.scrollY > 300) {
+        backToTop.style.display = 'flex';
+      } else {
+        backToTop.style.display = 'none';
+      }
+    });
+    
+    // Mobile menu toggle
+    document.querySelector('.menu-btn').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
