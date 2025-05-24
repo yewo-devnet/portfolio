@@ -9,27 +9,25 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  
-  <!-- Main Content -->
-  <div class="container-fluid p-0">
-    <!-- Navigation -->
-    <nav class="navbar">
-      <div class="nav-container">
-        <a href="index.html" class="nav-logo">YM</a>
-        <button class="menu-btn" id="menuToggle" aria-label="Menu">
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="nav-links" id="navLinks">
-          <a href="index.html" class="nav-link">Home</a>
-          <a href="about.html" class="nav-link">About</a>
-          <a href="skills.html" class="nav-link">Skills</a>
-          <a href="projects.html" class="nav-link active">Projects</a>
-          <a href="#contact" class="nav-link">Contact</a>
-        </div>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">YM</a>
+      <button class="menu-btn" id="menuToggle" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="projects.html" class="nav-link active">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </div>
-    </nav>
-    
-    <div class="page-container">
+    </div>
+  </nav>
+  <!-- Main Content -->
+  <div class="page-wrapper">
+    <div class="container">
       <h1 class="page-title">My Projects</h1>
       <p class="mb-5">
         Below is a collection of projects I've worked on, showcasing my experience in network engineering and web development. Each project represents a unique challenge and solution, highlighting different skills and technologies.
@@ -160,9 +158,9 @@
 
       <!-- Other Projects -->
       <h2 class="project-category">Other Noteworthy Projects</h2>
-      <div class="project-grid row g-4">
+      <div class="project-grid row">
         <!-- Small Project 1 -->
-        <div class="col-md-6 col-lg-4">
+        <div class="col-4 col-sm">
           <div class="small-project-card">
             <div class="small-project-header">
               <i class="far fa-folder folder-icon"></i>
@@ -184,7 +182,7 @@
         </div>
 
         <!-- Small Project 2 -->
-        <div class="col-md-6 col-lg-4">
+        <div class="col-4 col-sm">
           <div class="small-project-card">
             <div class="small-project-header">
               <i class="far fa-folder folder-icon"></i>
@@ -207,7 +205,7 @@
         </div>
 
         <!-- Small Project 3 -->
-        <div class="col-md-6 col-lg-4">
+        <div class="col-4 col-sm">
           <div class="small-project-card">
             <div class="small-project-header">
               <i class="far fa-folder folder-icon"></i>
@@ -228,27 +226,6 @@
           </div>
         </div>
 
-        <!-- Small Project 4 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="small-project-card">
-            <div class="small-project-header">
-              <i class="far fa-folder folder-icon"></i>
-              <div class="small-project-links">
-                <a href="#" class="project-link" aria-label="GitHub repository"><i class="fab fa-github"></i></a>
-                <a href="#" class="project-link" aria-label="External link"><i class="fas fa-external-link-alt"></i></a>
-              </div>
-            </div>
-            <h3 class="small-project-title">Network Documentation Generator</h3>
-            <p class="small-project-description">
-              An application that automatically generates comprehensive documentation for network infrastructure, including diagrams, device configurations, and IP addressing schemes.
-            </p>
-            <div class="project-tech">
-              <span class="tech-badge">Python</span>
-              <span class="tech-badge">Jinja2</span>
-              <span class="tech-badge">Netmiko</span>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
 
