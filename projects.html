@@ -40,7 +40,7 @@
       <div class="project-card">
         <div class="row g-4">
           <div class="col-md-4 col-lg-3">
-            <img src="https://picsum.photos/seed/nthambi/800/600" class="project-image img-fluid" alt="Nthambi Project Screenshot">
+            <img src="nthambi page 3.png" class="project-image img-fluid" alt="Nthambi Project Screenshot">
           </div>
           <div class="col-md-8 col-lg-9">
             <div class="project-header">
@@ -53,25 +53,27 @@
 
             <div class="project-description">
               <p>
-                Nthambi is a comprehensive web application designed to provide innovative solutions for network monitoring and management. It features an intuitive dashboard that displays real-time network metrics, allowing administrators to quickly identify and address potential issues.
+                A comprehensive web application enabling users to donate to individuals in need, focusing on education sponsorship, medical fundraising, and community initiatives in Malawi.
               </p>
               <p class="d-none d-md-block">
-                The application includes automated alerts, in-depth analytics, and customizable reports to help network teams maintain optimal performance. One of its key strengths is the ability to visualize complex network topologies in an easy-to-understand format.
+                •	Beneficiary Request System: Developed a web-based form for collecting and verifying beneficiary details to launch fundraising campaigns.
+                <p> •	Donation System: Integrated with PayChangu for seamless and secure payment processing; implemented robust donation tracking features.
+                </p>
+                •	User Profile Management: Designed and implemented donor and beneficiary profile systems for personalized information viewing.
+
               </p>
             </div>
 
             <div class="project-tech">
-              <span class="tech-badge">React</span>
-              <span class="tech-badge">Node.js</span>
-              <span class="tech-badge">MongoDB</span>
-              <span class="tech-badge">Express</span>
+              <span class="tech-badge">HTML5</span>
+              <span class="tech-badge">CSS3</span>
+              <span class="tech-badge">JavaScript</span>
               <span class="tech-badge">Bootstrap</span>
-              <span class="tech-badge d-none d-lg-inline-block">WebSockets</span>
-              <span class="tech-badge d-none d-lg-inline-block">D3.js</span>
+              <span class="tech-badge">Flask</span>
             </div>
 
             <div class="project-status">Status: In Development</div>
-            <div class="project-date">Started: December 2024</div>
+            <div class="project-date">Started: January 2025</div>
           </div>
         </div>
       </div>
@@ -84,39 +86,38 @@
           </div>
           <div class="col-md-8 col-lg-9">
             <div class="project-header">
-              <h3 class="project-title">Network Monitoring Tool</h3>
+              <h3 class="project-title">Python Web browser</h3>
               <div class="project-links">
-                <a href="#" class="project-link" aria-label="GitHub repository"><i class="fab fa-github"></i></a>
-                <a href="#" class="project-link" aria-label="External link"><i class="fas fa-external-link-alt"></i></a>
+                <a href="https://github.com/yewo-devnet/py_web_browser" class="project-link" aria-label="GitHub repository"><i class="fab fa-github"></i></a>
+                <!-- <a href="#" class="project-link" aria-label="External link"><i class="fas fa-external-link-alt"></i></a> -->
               </div>
             </div>
 
             <div class="project-description">
               <p>
-                This advanced network monitoring tool offers real-time monitoring of network performance, with automated alerts for potential issues and comprehensive analytics for network administrators. It uses SNMP to collect data from network devices and presents the information through an intuitive web interface.
+                A simple web browser built using PyQt5, the browser default fumctionality extends a previous project, an AsyncIO HTTP server, by connecting to it to render HTML templates hosted locally at http://localhost:8085.
+                 When a requested page is not found, the browser displays an error message and offers an option to search for the query on Google.
               </p>
               <p class="d-none d-md-block">
-                The tool includes features such as bandwidth monitoring, device health tracking, and historical performance analysis. It's designed to be highly configurable, allowing administrators to set custom thresholds and notification rules based on their specific network requirements.
               </p>
             </div>
 
             <div class="project-tech">
-              <span class="tech-badge">Python</span>
-              <span class="tech-badge">Django</span>
-              <span class="tech-badge">PostgreSQL</span>
+              <span class="tech-badge">PyQt5</span>
+              <span class="tech-badge">python</span>
+              <!-- <span class="tech-badge">PostgreSQL</span>
               <span class="tech-badge">SNMP</span>
-              <span class="tech-badge">Chart.js</span>
-              <span class="tech-badge d-none d-lg-inline-block">Celery</span>
-              <span class="tech-badge d-none d-lg-inline-block">Redis</span>
+              <span class="tech-badge">Chart.js</span> -->
+             
             </div>
 
-            <div class="project-status">Status: Ongoing Development</div>
-            <div class="project-date">Started: September 2024</div>
+            <div class="project-status">Status: Completed</div>
+            <div class="project-date">April 2025</div>
           </div>
         </div>
       </div>
 
-      <!-- University Campus Network -->
+      <!-- Xgo -->
       <div class="project-card">
         <div class="row g-4">
           <div class="col-md-4 col-lg-3">
@@ -124,38 +125,73 @@
           </div>
           <div class="col-md-8 col-lg-9">
             <div class="project-header">
-              <h3 class="project-title">University Campus Network</h3>
+              <h3 class="project-title">AsyncIO HTTP Server</h3>
               <div class="project-links">
-                <a href="#" class="project-link" aria-label="GitHub repository"><i class="fab fa-github"></i></a>
-                <a href="#" class="project-link" aria-label="Documentation"><i class="fas fa-file-alt"></i></a>
+                <a href="https://github.com/yewo-devnet/py_http_server" class="project-link" aria-label="GitHub repository"><i class="fab fa-github"></i></a>
+                <!-- <a href="#" class="project-link" aria-label="Documentation"><i class="fas fa-file-alt"></i></a> -->
               </div>
             </div>
 
             <div class="project-description">
               <p>
-                I designed and implemented a scalable and secure network infrastructure for a university campus, supporting thousands of concurrent users across multiple buildings. The network architecture incorporates a hierarchical design with core, distribution, and access layers to ensure optimal performance and reliability.
+                A lightweight Python server built with AsyncIO. 
+                It asynchronously serves HTML templates (index.html at http://localhost:8085/, register.html at /register), processes form submissions to save username and email to db.txt, and serves static assets from an assets/ directory.
+                 It returns 404 errors for invalid paths, showcasing skills in asynchronous programming and HTTP handling.
               </p>
-              <p class="d-none d-md-block">
+              <!-- <p class="d-none d-md-block">
                 Security measures include VLANs for traffic segmentation, access control lists, and a robust firewall implementation. The network also features redundancy at multiple levels to eliminate single points of failure, and supports diverse services such as VoIP, video conferencing, and high-speed internet access.
-              </p>
+              </p> -->
             </div>
 
             <div class="project-tech">
-              <span class="tech-badge">Cisco</span>
-              <span class="tech-badge">VLAN</span>
-              <span class="tech-badge">OSPF</span>
+              <span class="tech-badge">AsyncIO</span>
+              <span class="tech-badge">Python</span>
+              <!-- <span class="tech-badge">OSPF</span>
               <span class="tech-badge">Firewall</span>
-              <span class="tech-badge">VPN</span>
+              <span class="tech-badge">Packet Tracer</span>
               <span class="tech-badge d-none d-lg-inline-block">QoS</span>
-              <span class="tech-badge d-none d-lg-inline-block">Network Security</span>
+              <span class="tech-badge d-none d-lg-inline-block">Network Security</span> -->
             </div>
 
             <div class="project-status">Status: Completed</div>
-            <div class="project-date">March - July 2024</div>
+            <div class="project-date">April: 2025</div>
           </div>
         </div>
       </div>
 
+      <div class="project-card">
+        <div class="row g-4">
+          <div class="col-md-4 col-lg-3">
+            <img src="nthambi page 3.png" class="project-image img-fluid" alt="Nthambi Project Screenshot">
+          </div>
+          <div class="col-md-8 col-lg-9">
+            <div class="project-header">
+              <h3 class="project-title">Xgo</h3>
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="GitHub repository"><i class="fab fa-scratch"></i></a>
+                <a href="#" class="project-link" aria-label="External link"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+
+            <div class="project-description">
+              <p>
+                A Fun Car Game written in scratch, avoid crashing into other cars and try to beat my high-score of 17, yes! 17😎
+                You flick your car up and down between the two lanes with ninja-like reflexes, 
+                weaving through traffic as the speed cranks up faster and faster, 
+                it’s like your car’s got a rocket booster!😂
+              </p>
+            
+            </div>
+
+            <div class="project-tech">
+              <span class="tech-badge">Scratch</span>
+            </div>
+
+            <div class="project-status">Status: Completed</div>
+            <div class="project-date">July 2024</div>
+          </div>
+        </div>
+      </div>
       <!-- Other Projects -->
       <h2 class="project-category">Other Noteworthy Projects</h2>
       <div class="project-grid row">
